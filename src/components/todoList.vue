@@ -12,7 +12,8 @@
     <p>Todos Completed: {{  todosComplete }}</p>
     <p>Todos Left: {{ todosIncomplete }}</p>
 
-    <form v-on:submit.prevent="addTodo">
+    <todoForm @addTodo="addTodo"/>
+    <!-- <form v-on:submit.prevent="addTodo">
         Item: 
         <input type="text" v-model="newTodo.item">
         <br>
@@ -20,12 +21,13 @@
         <input type="checkbox" v-model="newTodo.isComplete"> 
         <br>
         <input type="submit" value="Add To-do">
-    </form>
+    </form> -->
 
 </template>
 
 <script setup>
 import { ref, reactive, computed } from 'vue'
+import todoForm from '@/components/todoForm.vue'
 
 const todos = reactive([
                 {
@@ -50,7 +52,7 @@ const todos = reactive([
                 }
 ])
 
-const newTodo = reactive({})
+// const newTodo = reactive({}) //moved to todoForm.vue
 const currentTodoId = ref(5) 
 
 const todosComplete = computed(() => {
@@ -65,7 +67,7 @@ const todosIncomplete = computed(() => {
             }).length;
 }) 
 
-function addTodo() { 
+function addTodo(newTodo) { 
     let add = {...newTodo}
     add.id = currentTodoId;
     todos.push(add);
