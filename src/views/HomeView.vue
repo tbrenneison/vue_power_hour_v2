@@ -1,9 +1,9 @@
 <script setup>
-import TheWelcome from '../components/TheWelcome.vue'
+import helloVph from '@/components/helloVph.vue'
 </script>
 
 <template>
   <main>
-    <TheWelcome />
+    <helloVph />
   </main>
 </template>
