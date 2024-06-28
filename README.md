@@ -16,6 +16,8 @@ This project has several branches that can be viewed sequentially, in the same o
     - magically makes everything pretty 
 7. support_multiple_cats 
     - switch between Zenith's and Philco's to-do lists
+8. final_copy 
+    - fully utilize Vue Router to create an About page for all my cats 
 
 
 ## Contact Tori 
