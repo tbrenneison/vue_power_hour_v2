@@ -14,6 +14,8 @@ This project has several branches that can be viewed sequentially, in the same o
     - moves state and logic from the components into a Pinia options store
 6. add_css 
     - magically makes everything pretty 
+7. support_multiple_cats 
+    - switch between Zenith's and Philco's to-do lists
 
 
 ## Contact Tori 
