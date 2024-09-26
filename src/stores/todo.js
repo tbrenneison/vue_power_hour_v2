@@ -54,6 +54,27 @@ export const useTodoStore = defineStore("todo", {
             isComplete: false,
           }
         ]
+      },
+      {
+        id: 3, 
+        name: 'Enzo', 
+        todos: [
+          {
+            id: 9,
+            item: "Avoid getting beat up by Z",
+            isComplete: false,
+          },
+          {
+            id: 10,
+            item: "BITE ALL THE ANKLES",
+            isComplete: false,
+          },
+          {
+            id: 11,
+            item: "Be the sweetest angel baby good boi",
+            isComplete: true,
+          }
+        ]
       }
     ],
     // todos: [
@@ -78,7 +99,7 @@ export const useTodoStore = defineStore("todo", {
     //     isComplete: false,
     //   },
     // ],
-    currentTodoId: 5,
+    currentTodoId: 12,
     newTodo: {},
     currentCatId: 1
   }),
