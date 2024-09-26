@@ -49,11 +49,16 @@ const todos = reactive([
                     id: 4,
                     item: "Open all the closet doors and have a look", 
                     isComplete: false
+                },
+                {
+                    id: 5,
+                    item: "Beat up my sweet angel baby brother because he's a puppy", 
+                    isComplete: false
                 }
 ])
 
 // const newTodo = reactive({}) //moved to todoForm.vue
-const currentTodoId = ref(5) 
+const currentTodoId = ref(6) 
 
 const todosComplete = computed(() => {
     return todos.filter((todo) => {
