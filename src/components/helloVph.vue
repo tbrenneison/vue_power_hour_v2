@@ -1,7 +1,10 @@
 <template>
  <h1>Welcome to the Vue.js Power Hour!</h1>
  <div class="griddy">
- <img src="../assets/codemom.png"/>
+   <div class="ugh">
+ <img src="../assets/codemom.png" class="codemom">
+ <img src="../assets/vph_repo_qr.png"/>
+   </div>
  <div class="texty">
     <h2>Tori Brenneison</h2>
     <h2>AKA "Code Mom"</h2>
@@ -35,7 +38,16 @@
  }
 
  img { 
-    width: 90%;
+    width: 35%;
+ }
+
+ .ugh { 
+   display: flex; 
+   justify-content:center;
+   align-items: center;
+ }
+ .codemom { 
+   width: 60%;
  }
 
  .griddy { 
