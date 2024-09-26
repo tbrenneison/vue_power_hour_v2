@@ -23,9 +23,14 @@ export const useTodoStore = defineStore('todo', {
           id: 4,
           item: "Open all the closet doors and have a look", 
           isComplete: false
-      }
+      },
+      {
+        id: 5,
+        item: "Beat up my sweet angel baby brother because he's a puppy", 
+        isComplete: false
+    }
 ],
-currentTodoId: 5,
+currentTodoId: 6,
 newTodo: {}
 
    }),
