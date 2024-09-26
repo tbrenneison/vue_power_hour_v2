@@ -1,6 +1,6 @@
 <template>
 
-  <h1>About My Dumb Cats</h1>
+  <h1>About My Dumb <span class="strikethrough">Cats</span> Pets</h1>
 
   <cat-cards/>
 
@@ -11,5 +11,7 @@ import CatCards from '@/components/catCard.vue'
 </script>
 
 <style>
-
+.strikethrough { 
+  text-decoration: line-through;
+}
 </style>

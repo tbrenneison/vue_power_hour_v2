@@ -7,7 +7,7 @@
        <p>Age: {{ cat.age }}</p>
        <p>Personality: {{ cat.personality }}</p>
        <br>
-       <p>About {{ cat.name }}: </p>
+       <h3>About {{ cat.name }}: </h3>
        <ul>
            <li v-for="fact in cat.facts">{{ fact }}</li>
        </ul>
@@ -56,6 +56,19 @@
                'Kind of a potty-mouth',
                'Absolutely will not share the top platform of the cat tree'
            ]
+       },
+       {
+           id: 4, 
+           name: 'Enzo', 
+           age: '2 months', 
+           personality: 'Ankle Biter', 
+           picPath: new URL('@/assets/cat_pics/enzo_baby_ilovehim_hessocute.jpg', import.meta.url).href,
+           facts: [
+               "Is not a cat", 
+               "May actually be a land shark", 
+               'The absolute cutest baby puppy',
+               'Awaiting his Embark DNA test results to find out who his real dad is'
+           ]
        }
    ])
     
@@ -69,7 +82,11 @@
    
     li { 
        list-style-type: none;
-       margin: 10px 0; 
+       margin-top: 10px;
+    }
+
+    ul { 
+        padding: 0px;
     }
    
     .catContainer { 
